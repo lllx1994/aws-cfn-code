@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description:
+  iam and iam-role Create
+
+# ------------------------------------------------------------#
+# Input Parameters
+# ------------------------------------------------------------#
+Parameters:
+  PJPrefix:
+    Type: String
+
+Resources:
+# ------------------------------------------------------------#
+#  IAM
+# ------------------------------------------------------------#
+# IAM Create
+  TerminalIamMac:
+    Type: AWS::IAM::User
+    Properties:
+      Groups:
+        - String
+      LoginProfile:
+        LoginProfile
+      ManagedPolicyArns:
+        - String
+      Path: String
+      PermissionsBoundary: String
+      Policies:
+        - Policy
+      UserName: terminal-iam-mac
+
